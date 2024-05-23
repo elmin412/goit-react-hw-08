@@ -1,0 +1,11 @@
+.contactBorder {
+    border: 2px solid;
+    list-style: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+
+.tottalList {
+    padding: 0;
+}

@@ -1,0 +1,22 @@
+.error {
+    color: red;
+}
+
+.formHead {
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.filterContact {
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: column;
+}
