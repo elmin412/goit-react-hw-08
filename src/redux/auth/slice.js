@@ -23,8 +23,8 @@ const authSlice = createSlice({
     state.loading = true
             })
             .addCase(register.fulfilled, (state, action) => {
-        state.name = action.payload.name
-        state.token = action.payload.token
+                state.user = action.payload.user
+                state.token = action.payload.token
                 state.isLoggedIn = true
                 state.loading = false
             })
@@ -68,9 +68,11 @@ const authSlice = createSlice({
                 state.user = action.payload;
                 state.isLoggedIn = true;
                 state.isRefreshing = false;
+                state.loading = false;
             })
             .addCase(refreshUser.rejected, (state) => {
                 state.isRefreshing = false;
+                state.loading = false;
     })
 
 })
